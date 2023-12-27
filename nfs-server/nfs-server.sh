@@ -2,7 +2,7 @@
 ## nfs-server install
 apt get install -y nfs-kernel-server
 ## nfs 공유 디렉터리 생성
-mkdir /srv/nfs-volume
+mkdir -p /srv/nfs-volume
 ## nfs-server 설정
 echo "/srv/nfs-volume *(rw,sync,no_subtree_check,no_root_squash)" | sudo tee /etc/exports
 
