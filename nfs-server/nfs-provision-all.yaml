@@ -100,12 +100,12 @@ spec:
             - name: NFS_SERVER
               value: 10.10.3.107 ### 수정
             - name: NFS_PATH
-              value: /srv/nfs-server ### 수정
+              value: /srv/nfs-volume ### 수정
       volumes:
         - name: nfs-client-root
           nfs:
             server: 10.10.3.107 ### 수정
-            path: /srv/nfs-server ### 수정
+            path: /srv/nfs-volume ### 수정
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
