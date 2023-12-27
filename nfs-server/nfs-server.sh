@@ -1,6 +1,8 @@
 # nfs-server
+## apt update
+apt update -y
 ## nfs-server install
-apt get install -y nfs-kernel-server
+apt install -y nfs-kernel-server
 ## nfs 공유 디렉터리 생성
 mkdir -p /srv/nfs-volume
 ## nfs-server 설정
