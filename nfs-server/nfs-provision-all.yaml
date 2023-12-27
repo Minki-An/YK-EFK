@@ -98,14 +98,14 @@ spec:
             - name: PROVISIONER_NAME
               value: k8s-sigs.io/nfs-subdir-external-provisioner
             - name: NFS_SERVER
-              value: 192.168.56.103 ### 수정
+              value: 10.10.3.107 ### 수정
             - name: NFS_PATH
-              value: /addon
+              value: /srv/nfs-server ### 수정
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 192.168.56.103 ### 수정
-            path: /addon
+            server: 10.10.3.107 ### 수정
+            path: /srv/nfs-server ### 수정
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
